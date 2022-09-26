@@ -21,12 +21,28 @@
 <body style="margin:0; padding: 0;background-image: linear-gradient(90deg, #1a9dd5, #52b968); font-family: poppins; ">
     <style>
         p.bottom {
-            margin-top: -1.5rem;
+            margin-top: 3rem;
             text-align: center;
             color: white;
         }
         
         button.button {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -1em;
+            background-color: dodgerBlue;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            width: 12em;
+            height: 3em;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        input[type=reset] {
             margin-left: auto;
             margin-right: auto;
             margin-top: -1em;
@@ -69,95 +85,44 @@
             margin-left: 0.5em;
             margin-right: 0.5em;
         }
+        
+        .-label:hover {
+            background-color: rgba(0, 0, 0, .8);
+            color: white;
+            transition: background-color .2s ease-in-out;
+            border-radius: 100%;
+            width: 100%;
+            height: 95%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
-    <form action="#working" class="aboutme" style=" width: 90%; background-image:url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg); box-shadow: 0 20px 25px; margin-left: auto; margin-right: auto; margin-top: 4rem;">
-        <div style="display: flex; justify-content:space-between;">
-            <div style="width: 100%; padding: 1rem; border: 1px solid white; border-radius: 20px;">
-                <div style="display:flex;margin-right: auto; margin-left: auto; margin-top: 2em; justify-content: center;">
-                    <div id="tampilkan" style="width: 13.8em; height:13.8em; border-style: groove; border: 10px solid rgb(149, 149, 149); border-radius: 100%;  background-size: cover; background-color: rgb(157, 157, 157);">
-                        <input type="file" id="gambar" accept="image/*">
-                        <label id="tombol" onclick="show_hide()" for="gambar" style="color: aliceblue; height: 1em; width: 2em; background-color: black; position: absolute; margin-left: 1.8em; margin-top: 6.2em; width: 10rem; height: 2em; border: 10em;border-radius: 30em; display: flex; justify-content: center; align-items: center;">
-                              <!-- ini icon Foto-->
-                                <span class="material-symbols-rounded" style="margin-right:0.5em;">
-                                    add_a_photo
-                                    </span> Pilih Gambar</label>
-                    </div>
-                </div>
-                <div style="display:flex; justify-content: space-around; margin-top: 2rem; margin-bottom: 5em; padding: 1em; margin: 1em;">
-                    <div>
-                        <label for="name">Fullname</label><br/>
-                        <input id="name" name="name" type="text" required>
-                        <br/>
-                        <label for="job">Title</label><br/>
-                        <input type="text" name="job" id="job" placeholder="Input Your Title" required>
-                        <br/>
-                        <label for="nomorhp">Phone Number</label>
-                        <br/>
-                        <input type="tel" name="nomorhp" id="notelp" placeholder="Your Phone Number" required>
-                        <br/>
-                        <label for="city">City</label><br/>
-                        <select id="city" name="city" required value>
-                                    <option value="" place>Select Your City</option>
-                                    <option value="Kota Administrasi Jakarta Barat">Jakarta Barat, Indonesia</option>
-                                    <option value="Kota Administrasi Jakarta Pusat">Jakarta Pusat, Indonesia</option>
-                                    <option value="Kota Administrasi Jakarta Selatan">Jakarta Selatan, Indonesia</option>
-                                    <option value="Kota Administrasi Jakarta Timur">Jakarta Timur, Indonesia</option>
-                                    <option value="Kota Administrasi Jakarta Utara">Jakarta Utara, Indonesia</option>
-                                </select>
-                    </div>
-                    <div>
-                        <label for="email">Email</label><br/>
-                        <input type="email" name="test" id="email" required placeholder="Your Email">
-                        <br/>
-                        <label for="Linked">About Me</label>
-                        <br/>
-                        <textarea name="tentangsaya" id="textarea" cols="30" rows="10" style="width: 260px; height: 146px;" required></textarea>
-                        <br/>
-                    </div>
-                </div>
-                <div style="margin-top: 2rem; justify-content: center;">
-                    <button type="submit" class="button">Submit</button>
-                </div>
-            </div>
-            <div style="width: 40%; background-color: aliceblue; display: flex; justify-content: center; align-items: center; border-radius: 0 20px 20px 0;">
-                <ul style="list-style:none;  padding: 0;">
-                    <li><span class="material-symbols-rounded" style="">
-                        person
-                        </span> About me</li>
-                    <li><span class="material-symbols-rounded" style="">
-                        work
-                        </span>Experience</li>
-                    <li><span class="material-symbols-outlined">
-                        military_tech
-                        </span>Certificates</li>
-                    <li><span class="material-symbols-outlined">
-                        engineering
-                        </span>Skills</li>
-                    <li><span class="material-symbols-outlined">
-                        public
-                        </span>Social Media</li>
-                </ul>
-            </div>
-        </div>
-    </form>
-    <form action="#working" class="pengalaman">
-        <div style=" margin:4rem; padding:0; display: flex; justify-content: space-; background-color: #fff; box-shadow: 0 20px 25px; border-radius: 10px;">
-            <div style="width: 70%; margin: rem; padding: 1rem; background-color: aliceblue; border: 1px solid white; border-radius: 10px;">
-                <section style="display: flex;">
-                    <div style="display:flex; ; margin-right: auto; margin-left: auto; margin-top: 2em; border: 0.15em solid black; border-radius: 7em; background-color: grey;">
-                        <div id="tampilkan" style="width: 13.8em; height:13.8em; border:1px solid rgb(149, 149, 149); border-radius: 100%;  background-size: cover; background-color: rgb(157, 157, 157);">
-                            <input type="file" id="gambar" accept="image/*">
-                            <label id="tombol" onclick="show_hide()" for="gambar" style="color: aliceblue; height: 1em; width: 2em; background-color: black; position: absolute; margin-left: 1.8em; margin-top: 6.2em; width: 10rem; height: 2em; border: 10em;border-radius: 30em; display: flex; justify-content: center; align-items: center;">
-                          <!-- ini icon Foto-->
-                            <span class="material-symbols-rounded" style="margin-right:0.5em;">
-                                add_a_photo
-                                </span> Pilih Gambar</label>
+    <form action="#working" class="aboutme" style="display: none; width: 90%; background-image:url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg); box-shadow: 0 20px 25px; margin-left: auto; margin-right: auto;
+                                margin-top: 4rem; ">
+        <div style="display: flex;">
+            <div style="width: 70%; display: flex; justify-content:space-between; ">
+                <div style="width: 100%; padding: 1rem; border: 1px solid white; border-radius: 20px; ">
+                    <div style="display:flex;margin-right: auto; margin-left: auto; margin-top: 2em; justify-content: center; ">
+                        <div>
+                            <div>
+                                <div class="profile-pic " style="color: transparent;transition: all .3s ease; transition: all .3s ease; ">
+                                    <label class="-label" for="file" style="cursor: pointer; ">
+                                        <span class="sizetext ">Change Image</span>
+                                        <span class="material-symbols-outlined">
+                                            add_a_photo
+                                            </span>
+                                    </label>
+                                    <input id="file" type="file" onchange="loadFile(event)" accept="image/*" />
+                                    <img src="https://cdn.pixabay.com/photo/2017/08/06/21/01/louvre-2596278_960_720.jpg" id="output" width="220px" height="220px" style="object-fit: cover; border: 1px solid white; border-radius: 50%;z-index: 0; " />
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-                <section>
 
-                    <div style="display:flex; justify-content: space-around; margin-top: 2rem; margin-bottom: 5em; padding: 1em; margin: 10px;">
+                    </div>
+                    <div style="display:flex; justify-content: space-around; margin-top: 2rem; margin-bottom: 5em; padding: 1em; margin: 1em;">
                         <div>
                             <label for="name">Fullname</label><br/>
                             <input id="name" name="name" type="text" required>
@@ -171,36 +136,111 @@
                             <br/>
                             <label for="city">City</label><br/>
                             <select id="city" name="city" required value>
-                                <option value="" place>Select Your City</option>
-                                <option value="Kota Administrasi Jakarta Barat">Jakarta Barat, Indonesia</option>
-                                <option value="Kota Administrasi Jakarta Pusat">Jakarta Pusat, Indonesia</option>
-                                <option value="Kota Administrasi Jakarta Selatan">Jakarta Selatan, Indonesia</option>
-                                <option value="Kota Administrasi Jakarta Timur">Jakarta Timur, Indonesia</option>
-                                <option value="Kota Administrasi Jakarta Utara">Jakarta Utara, Indonesia</option>
-                            </select>
+                                            <option value=" " place>Select Your City</option>
+                                            <option value="Kota Administrasi Jakarta Barat ">Jakarta Barat, Indonesia</option>
+                                            <option value="Kota Administrasi Jakarta Pusat ">Jakarta Pusat, Indonesia</option>
+                                            <option value="Kota Administrasi Jakarta Selatan ">Jakarta Selatan, Indonesia</option>
+                                            <option value="Kota Administrasi Jakarta Timur ">Jakarta Timur, Indonesia</option>
+                                            <option value="Kota Administrasi Jakarta Utara ">Jakarta Utara, Indonesia</option>
+                                        </select>
                         </div>
                         <div>
                             <label for="email">Email</label><br/>
                             <input type="email" name="test" id="email" required placeholder="Your Email">
-
-                            <br/>
-                            <label for="Linked">Linkedin</label>
-                            <br/>
-                            <input type="url" name="Linked" id="linkedin">
-
                             <br/>
                             <label for="Linked">About Me</label>
                             <br/>
-                            <textarea name="" id="" cols="30" rows="10" style="width: 581px; height: 126px;" required></textarea>
-
+                            <textarea name="tentangsaya" id="textarea" cols="30" rows="10" style="width: 260px; height: 146px;" required></textarea>
+                            <br/>
                         </div>
                     </div>
-                    <div style="position: relative;">
-                        <button type="submit" class="button">submit</button>
+                    <div style="margin-top: 2rem; justify-content: center;">
+                        <button type="submit" class="button" style="cursor: pointer;">Submit</button>
                     </div>
-                </section>
+                </div>
             </div>
-            <div style="width: 80%;  padding: 1rem; background-color: aliceblue; border: 1px solid white; border-radius: 10px;">
+            <div style="width: 30%; background-color: aliceblue; display: flex; justify-content: center; align-items: center; border-radius: 0 20px 20px 0; ">
+                <ul style="list-style:none; padding: 0; ">
+                    <li><span class="material-symbols-rounded ">
+                            person
+                            </span> About me</li>
+                    <li><span class="material-symbols-rounded ">
+                            work
+                            </span>Experience</li>
+                    <li><span class="material-symbols-outlined ">
+                            military_tech
+                            </span>Certificates</li>
+                    <li><span class="material-symbols-outlined ">
+                            engineering
+                            </span>Skills</li>
+                    <li><span class="material-symbols-outlined ">
+                            public
+                            </span>Social Media</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+    <form action="#working" class="aboutme" style="width: 90%; background-image:url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg); box-shadow: 0 20px 25px; margin-left: auto; margin-right: auto;margin-top: 4rem; border-radius: 20px;">
+        <div style="display: flex;">
+            <div style="width: 70%; display: flex; justify-content:space-between; ">
+                <div style="width: 100%; padding: 1rem; border: 1px solid white; border-radius: 20px; ">
+                    <div style="background-color: white; border-radius: 20px; margin: 1em; padding: 1em; width: 90%; height: 80%;display: flex;justify-content: space-around;">
+                        <div>
+                            <label for="name">Fullname</label><br/>
+                            <input id="name" name="name" type="text" required>
+                            <br/>
+                            <label for="job">Title</label><br/>
+                            <input type="text" name="job" id="job" placeholder="Input Your Title" required>
+                            <br/>
+                            <label for="nomorhp">Phone Number</label>
+                            <br/>
+                            <input type="tel" name="nomorhp" id="notelp" placeholder="Your Phone Number" required>
+                            <br/>
+                            <label for="city">City</label><br/>
+                            <select id="city" name="city" required value>
+                                            <option value=" " place>Select Your City</option>
+                                            <option value="Kota Administrasi Jakarta Barat ">Jakarta Barat, Indonesia</option>
+                                            <option value="Kota Administrasi Jakarta Pusat ">Jakarta Pusat, Indonesia</option>
+                                            <option value="Kota Administrasi Jakarta Selatan ">Jakarta Selatan, Indonesia</option>
+                                            <option value="Kota Administrasi Jakarta Timur ">Jakarta Timur, Indonesia</option>
+                                            <option value="Kota Administrasi Jakarta Utara ">Jakarta Utara, Indonesia</option>
+                            </select>
+                            <br/>
+                            <label for="email">Email</label><br/>
+                            <input type="email" name="test" id="email" required placeholder="Your Email">
+                            <br/>
+                        </div>
+                        <div>
+                            <label for="Linked">Description</label>
+                            <br/>
+                            <textarea name="tentangsaya" id="textarea" cols="30" rows="10" style="width: 30em;height: 35em; border-radius: 0.5rem;" required></textarea>
+                            <br/>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem; display: flex; ">
+                        <button type="submit" class="button" style="cursor: pointer;">Submit</button>
+                        <button type="reset" class="button" style="cursor: pointer;">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 30%; background-color: aliceblue; display: flex; justify-content: center; align-items: center; border-radius: 0 20px 20px 0; ">
+                <ul style="list-style:none; padding: 0; ">
+                    <li><span class="material-symbols-rounded ">
+                            person
+                            </span> About me</li>
+                    <li><span class="material-symbols-rounded ">
+                            work
+                            </span>Experience</li>
+                    <li><span class="material-symbols-outlined">
+                            military_tech
+                            </span>Certificates</li>
+                    <li><span class="material-symbols-outlined q">
+                            engineering
+                            </span>Skills</li>
+                    <li><span class="material-symbols-outlined ">
+                            public
+                            </span>Social Media</li>
+                </ul>
             </div>
         </div>
     </form>
@@ -208,29 +248,10 @@
     <p class="bottom">Sponsored By: Sertifikasiku</p>
 </body>
 <script>
-    // Trigger Button Upload hide
-    var a;
-
-    function show_hide() {
-        if (a == 1) {
-            document.getElementById("tombol").style.display = "inline";
-            return a = 0;
-        } else {
-            document.getElementById("tombol").style.display = "none";
-            return a = 1;
-        }
-    }
-
-    // ini unutk menampilkan gambar yang telah dipilih oleh folder
-    const image_input = document.querySelector("#gambar");
-    image_input.addEventListener("change", function() {
-        const reader = new FileReader();
-        reader.addEventListener("load", () => {
-            const uploaded_image = reader.result;
-            document.querySelector("#tampilkan").style.backgroundImage = `url(${uploaded_image})`;
-        });
-        reader.readAsDataURL(this.files[0]);
-    });
+    var loadFile = function(event) {
+        var image = document.getElementById("output");
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
 </script>
 
 </html>
