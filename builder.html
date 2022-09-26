@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,1,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!--- person dan work-->
+
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="file.css">
+    <title>Document</title>
+</head>
+
+<body style="margin:0; padding: 0;background-image: linear-gradient(90deg, #1a9dd5, #52b968); font-family: poppins; ">
+    <style>
+        p.bottom {
+            margin-top: -1.5rem;
+            text-align: center;
+            color: white;
+        }
+        
+        button.button {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -1em;
+            background-color: dodgerBlue;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            width: 12em;
+            height: 3em;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        form.pengalaman {
+            display: none;
+        }
+        
+        li {
+            font-size: 20px;
+            margin-top: 2rem;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            width: 16em;
+            height: 3em;
+            background-color: #156eff;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        
+        span.material-symbols-rounded {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+        
+        span.material-symbols-outlined {
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+    </style>
+    <form action="#working" class="aboutme" style=" width: 90%; background-image:url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg); box-shadow: 0 20px 25px; margin-left: auto; margin-right: auto; margin-top: 4rem;">
+        <div style="display: flex; justify-content:space-between;">
+            <div style="width: 100%; padding: 1rem; border: 1px solid white; border-radius: 20px;">
+                <div style="display:flex;margin-right: auto; margin-left: auto; margin-top: 2em; justify-content: center;">
+                    <div id="tampilkan" style="width: 13.8em; height:13.8em; border-style: groove; border: 10px solid rgb(149, 149, 149); border-radius: 100%;  background-size: cover; background-color: rgb(157, 157, 157);">
+                        <input type="file" id="gambar" accept="image/*">
+                        <label id="tombol" onclick="show_hide()" for="gambar" style="color: aliceblue; height: 1em; width: 2em; background-color: black; position: absolute; margin-left: 1.8em; margin-top: 6.2em; width: 10rem; height: 2em; border: 10em;border-radius: 30em; display: flex; justify-content: center; align-items: center;">
+                              <!-- ini icon Foto-->
+                                <span class="material-symbols-rounded" style="margin-right:0.5em;">
+                                    add_a_photo
+                                    </span> Pilih Gambar</label>
+                    </div>
+                </div>
+                <div style="display:flex; justify-content: space-around; margin-top: 2rem; margin-bottom: 5em; padding: 1em; margin: 1em;">
+                    <div>
+                        <label for="name">Fullname</label><br/>
+                        <input id="name" name="name" type="text" required>
+                        <br/>
+                        <label for="job">Title</label><br/>
+                        <input type="text" name="job" id="job" placeholder="Input Your Title" required>
+                        <br/>
+                        <label for="nomorhp">Phone Number</label>
+                        <br/>
+                        <input type="tel" name="nomorhp" id="notelp" placeholder="Your Phone Number" required>
+                        <br/>
+                        <label for="city">City</label><br/>
+                        <select id="city" name="city" required value>
+                                    <option value="" place>Select Your City</option>
+                                    <option value="Kota Administrasi Jakarta Barat">Jakarta Barat, Indonesia</option>
+                                    <option value="Kota Administrasi Jakarta Pusat">Jakarta Pusat, Indonesia</option>
+                                    <option value="Kota Administrasi Jakarta Selatan">Jakarta Selatan, Indonesia</option>
+                                    <option value="Kota Administrasi Jakarta Timur">Jakarta Timur, Indonesia</option>
+                                    <option value="Kota Administrasi Jakarta Utara">Jakarta Utara, Indonesia</option>
+                                </select>
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br/>
+                        <input type="email" name="test" id="email" required placeholder="Your Email">
+                        <br/>
+                        <label for="Linked">About Me</label>
+                        <br/>
+                        <textarea name="tentangsaya" id="textarea" cols="30" rows="10" style="width: 260px; height: 146px;" required></textarea>
+                        <br/>
+                    </div>
+                </div>
+                <div style="margin-top: 2rem; justify-content: center;">
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </div>
+            <div style="width: 40%; background-color: aliceblue; display: flex; justify-content: center; align-items: center; border-radius: 0 20px 20px 0;">
+                <ul style="list-style:none;  padding: 0;">
+                    <li><span class="material-symbols-rounded" style="">
+                        person
+                        </span> About me</li>
+                    <li><span class="material-symbols-rounded" style="">
+                        work
+                        </span>Experience</li>
+                    <li><span class="material-symbols-outlined">
+                        military_tech
+                        </span>Certificates</li>
+                    <li><span class="material-symbols-outlined">
+                        engineering
+                        </span>Skills</li>
+                    <li><span class="material-symbols-outlined">
+                        public
+                        </span>Social Media</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+    <form action="#working" class="pengalaman">
+        <div style=" margin:4rem; padding:0; display: flex; justify-content: space-; background-color: #fff; box-shadow: 0 20px 25px; border-radius: 10px;">
+            <div style="width: 70%; margin: rem; padding: 1rem; background-color: aliceblue; border: 1px solid white; border-radius: 10px;">
+                <section style="display: flex;">
+                    <div style="display:flex; ; margin-right: auto; margin-left: auto; margin-top: 2em; border: 0.15em solid black; border-radius: 7em; background-color: grey;">
+                        <div id="tampilkan" style="width: 13.8em; height:13.8em; border:1px solid rgb(149, 149, 149); border-radius: 100%;  background-size: cover; background-color: rgb(157, 157, 157);">
+                            <input type="file" id="gambar" accept="image/*">
+                            <label id="tombol" onclick="show_hide()" for="gambar" style="color: aliceblue; height: 1em; width: 2em; background-color: black; position: absolute; margin-left: 1.8em; margin-top: 6.2em; width: 10rem; height: 2em; border: 10em;border-radius: 30em; display: flex; justify-content: center; align-items: center;">
+                          <!-- ini icon Foto-->
+                            <span class="material-symbols-rounded" style="margin-right:0.5em;">
+                                add_a_photo
+                                </span> Pilih Gambar</label>
+                        </div>
+                    </div>
+                </section>
+                <section>
+
+                    <div style="display:flex; justify-content: space-around; margin-top: 2rem; margin-bottom: 5em; padding: 1em; margin: 10px;">
+                        <div>
+                            <label for="name">Fullname</label><br/>
+                            <input id="name" name="name" type="text" required>
+                            <br/>
+                            <label for="job">Title</label><br/>
+                            <input type="text" name="job" id="job" placeholder="Input Your Title" required>
+                            <br/>
+                            <label for="nomorhp">Phone Number</label>
+                            <br/>
+                            <input type="tel" name="nomorhp" id="notelp" placeholder="Your Phone Number" required>
+                            <br/>
+                            <label for="city">City</label><br/>
+                            <select id="city" name="city" required value>
+                                <option value="" place>Select Your City</option>
+                                <option value="Kota Administrasi Jakarta Barat">Jakarta Barat, Indonesia</option>
+                                <option value="Kota Administrasi Jakarta Pusat">Jakarta Pusat, Indonesia</option>
+                                <option value="Kota Administrasi Jakarta Selatan">Jakarta Selatan, Indonesia</option>
+                                <option value="Kota Administrasi Jakarta Timur">Jakarta Timur, Indonesia</option>
+                                <option value="Kota Administrasi Jakarta Utara">Jakarta Utara, Indonesia</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="email">Email</label><br/>
+                            <input type="email" name="test" id="email" required placeholder="Your Email">
+
+                            <br/>
+                            <label for="Linked">Linkedin</label>
+                            <br/>
+                            <input type="url" name="Linked" id="linkedin">
+
+                            <br/>
+                            <label for="Linked">About Me</label>
+                            <br/>
+                            <textarea name="" id="" cols="30" rows="10" style="width: 581px; height: 126px;" required></textarea>
+
+                        </div>
+                    </div>
+                    <div style="position: relative;">
+                        <button type="submit" class="button">submit</button>
+                    </div>
+                </section>
+            </div>
+            <div style="width: 80%;  padding: 1rem; background-color: aliceblue; border: 1px solid white; border-radius: 10px;">
+            </div>
+        </div>
+    </form>
+    </div>
+    <p class="bottom">Sponsored By: Sertifikasiku</p>
+</body>
+<script>
+    // Trigger Button Upload hide
+    var a;
+
+    function show_hide() {
+        if (a == 1) {
+            document.getElementById("tombol").style.display = "inline";
+            return a = 0;
+        } else {
+            document.getElementById("tombol").style.display = "none";
+            return a = 1;
+        }
+    }
+
+    // ini unutk menampilkan gambar yang telah dipilih oleh folder
+    const image_input = document.querySelector("#gambar");
+    image_input.addEventListener("change", function() {
+        const reader = new FileReader();
+        reader.addEventListener("load", () => {
+            const uploaded_image = reader.result;
+            document.querySelector("#tampilkan").style.backgroundImage = `url(${uploaded_image})`;
+        });
+        reader.readAsDataURL(this.files[0]);
+    });
+</script>
+
+</html>
