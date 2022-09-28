@@ -47,7 +47,7 @@
                             box-shadow: 0 0 2px 0 dodgerBlue;
                         }
                         
-                        input[type=url] {
+                        input[type=month] {
                             width: 20em;
                             border: 2px solid #aaa;
                             border-radius: 4px;
@@ -57,7 +57,7 @@
                             transition: .3s;
                         }
                         
-                        input[type=url]:focus {
+                        input[type=month]:focus {
                             border-color: dodgerBlue;
                             box-shadow: 0 0 2px 0 dodgerBlue;
                         }

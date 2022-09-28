@@ -180,38 +180,80 @@
             </div>
         </div>
     </form>
-    <form action="#working" class="aboutme" style="width: 90%; background-image:url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg); box-shadow: 0 20px 25px; margin-left: auto; margin-right: auto;margin-top: 4rem; border-radius: 20px;">
+    <form action="#working" class="Experience" style="display: none; width: 90%; background-image:url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg); box-shadow: 0 20px 25px; margin-left: auto; margin-right: auto;margin-top: 4rem; border-radius: 20px;">
         <div style="display: flex;">
             <div style="width: 70%; display: flex; justify-content:space-between; ">
                 <div style="width: 100%; padding: 1rem; border: 1px solid white; border-radius: 20px; ">
                     <div style="background-color: white; border-radius: 20px; margin: 1em; padding: 1em; width: 90%; height: 80%;display: flex;justify-content: space-around;">
-                        <div>
-                            <label for="name">Fullname</label><br/>
-                            <input id="name" name="name" type="text" required>
+                        <div style="display:grid; justify-content:center; align-items: center;">
+                            <label for="city" style="font-size: 1.3em;">Company Name</label><br/>
+                            <input type="text" placeholder="Your Company Name" required>
                             <br/>
-                            <label for="job">Title</label><br/>
-                            <input type="text" name="job" id="job" placeholder="Input Your Title" required>
+                            <label for="name" style="font-size: 1.3em;">Job Title</label><br/>
+                            <input id="name" name="name" type="text" placeholder="Your Title" required>
                             <br/>
-                            <label for="nomorhp">Phone Number</label>
+                            <label for="awal" style="font-size: 1.3em;">Start the Job</label>
+                            <input type="month" name="awal" id="awalmasuk" required>
                             <br/>
-                            <input type="tel" name="nomorhp" id="notelp" placeholder="Your Phone Number" required>
-                            <br/>
-                            <label for="city">City</label><br/>
-                            <select id="city" name="city" required value>
-                                            <option value=" " place>Select Your City</option>
-                                            <option value="Kota Administrasi Jakarta Barat ">Jakarta Barat, Indonesia</option>
-                                            <option value="Kota Administrasi Jakarta Pusat ">Jakarta Pusat, Indonesia</option>
-                                            <option value="Kota Administrasi Jakarta Selatan ">Jakarta Selatan, Indonesia</option>
-                                            <option value="Kota Administrasi Jakarta Timur ">Jakarta Timur, Indonesia</option>
-                                            <option value="Kota Administrasi Jakarta Utara ">Jakarta Utara, Indonesia</option>
-                            </select>
-                            <br/>
-                            <label for="email">Email</label><br/>
-                            <input type="email" name="test" id="email" required placeholder="Your Email">
+                            <label for="akhir" style="font-size: 1.3em;">End the Job</label>
+                            <input type="month" name="akhir" id="akhirmasuk" required>
                             <br/>
                         </div>
                         <div>
-                            <label for="Linked">Description</label>
+                            <label for="Linked" style="font-size: 1.3em;">Job Description</label>
+                            <br/>
+                            <textarea name="tentangsaya" id="textarea" cols="30" rows="10" style="width: 30em;height: 35em; border-radius: 0.5rem;" required></textarea>
+                            <br/>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem; display: flex; ">
+                        <button type="submit" class="button" style="cursor: pointer;">Submit</button>
+                        <button type="reset" class="button" style="cursor: pointer;">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 30%; background-color: aliceblue; display: flex; justify-content: center; align-items: center; border-radius: 0 20px 20px 0; ">
+                <ul style="list-style:none; padding: 0; ">
+                    <li><span class="material-symbols-rounded ">
+                            person
+                            </span> About me</li>
+                    <li><span class="material-symbols-rounded ">
+                            work
+                            </span>Experience</li>
+                    <li><span class="material-symbols-outlined">
+                            military_tech
+                            </span>Certificates</li>
+                    <li><span class="material-symbols-outlined q">
+                            engineering
+                            </span>Skills</li>
+                    <li><span class="material-symbols-outlined ">
+                            public
+                            </span>Social Media</li>
+                </ul>
+            </div>
+        </div>
+    </form>
+    <form action="#working" class="Certificates" style="width: 90%; background-image:url(https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg); box-shadow: 0 20px 25px; margin-left: auto; margin-right: auto;margin-top: 4rem; border-radius: 20px;">
+        <div style="display: flex;">
+            <div style="width: 70%; display: flex; justify-content:space-between; ">
+                <div style="width: 100%; padding: 1rem; border: 1px solid white; border-radius: 20px; ">
+                    <div style="background-color: white; border-radius: 20px; margin: 1em; padding: 1em; width: 90%; height: 80%;display: flex;justify-content: space-around;">
+                        <div style="display:grid; justify-content:center; align-items: center;">
+                            <label for="city" style="font-size: 1.3em;">Company Name</label><br/>
+                            <input type="text" placeholder="Your Company Name" required>
+                            <br/>
+                            <label for="name" style="font-size: 1.3em;">Job Title</label><br/>
+                            <input id="name" name="name" type="text" placeholder="Your Title" required>
+                            <br/>
+                            <label for="awal" style="font-size: 1.3em;">Start the Job</label>
+                            <input type="month" name="awal" id="awalmasuk" required>
+                            <br/>
+                            <label for="akhir" style="font-size: 1.3em;">End the Job</label>
+                            <input type="month" name="akhir" id="akhirmasuk" required>
+                            <br/>
+                        </div>
+                        <div>
+                            <label for="Linked" style="font-size: 1.3em;">Job Description</label>
                             <br/>
                             <textarea name="tentangsaya" id="textarea" cols="30" rows="10" style="width: 30em;height: 35em; border-radius: 0.5rem;" required></textarea>
                             <br/>
